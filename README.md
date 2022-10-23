@@ -7,7 +7,9 @@ Cross compiled with GlibC (--enable-kernel=2.6.36) and Mipsel-linux-gnu-gcc (-EL
 
 ## Sources: 
 - TCPDUMP - https://github.com/the-tcpdump-group/tcpdump (required [libpcap](https://github.com/the-tcpdump-group/libpcap) )
-- VIM tiny - https://github.com/vim/vim (Required [ncurses] (https://github.com/mirror/ncurses) ) !HIGHLY UNSTABLE, requires termcap! It won't the recognize terminal otherwise. (compiled with variablesvim_cv_memcpy_handles_overlap=set vim_cv_bcopy_handles_overlap=set vim_cv_memmove_handles_overlap=set vim_cv_stat_ignores_slash=set vim_cv_timer_create=set vim_cv_getcwd_broken=set vim_cv_toupper_broken="set" vim_cv_terminfo="set" vim_cv_tgetent=zero ./configure --host=arm-apple-darwin11 --with-tlib=ncurses)
+- VIM tiny - https://github.com/vim/vim (Required [ncurses](https://github.com/mirror/ncurses) ) !HIGHLY UNSTABLE, requires termcap! It won't the recognize terminal otherwise. (compiled with variablesvim_cv_memcpy_handles_overlap=set vim_cv_bcopy_handles_overlap=set vim_cv_memmove_handles_overlap=set vim_cv_stat_ignores_slash=set vim_cv_timer_create=set vim_cv_getcwd_broken=set vim_cv_toupper_broken="set" vim_cv_terminfo="set" vim_cv_tgetent=zero ./configure --host=arm-apple-darwin11 --with-tlib=ncurses)
+- NetCat 0.7.1 - https://netcat.sourceforge.net/download.php 
+
 
 
 ## How to use Binaries
