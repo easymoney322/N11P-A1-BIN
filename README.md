@@ -8,8 +8,8 @@ Cross compiled with GlibC (--enable-kernel=2.6.36) and Mipsel-linux-gnu-gcc (-EL
 ## Sources: 
 - TCPDUMP - https://github.com/the-tcpdump-group/tcpdump (It was requiring [libpcap](https://github.com/the-tcpdump-group/libpcap) )
 - NetCat 0.7.1 - https://netcat.sourceforge.net/download.php 
-- File 5.32 from lib magic - https://packages.ubuntu.com/bionic/file ** !You need to specify magic.mgc database file with -m option. E.g. ./filemagic -m magic.mgc /etc/icon.ico ! **
-- VIM 9.0 Tiny - https://github.com/vim/vim (With [ncurses](https://github.com/mirror/ncurses) ) . ** Binaries are in vimtiny folder **
+- File 5.32 from lib magic - https://packages.ubuntu.com/bionic/file **!You need to specify magic.mgc database file with -m option. E.g. ./filemagic -m magic.mgc /etc/icon.ico !**
+- VIM 9.0 Tiny - https://github.com/vim/vim (With [ncurses](https://github.com/mirror/ncurses) ) . **Binaries are in vimtiny folder**
 
 
 
