@@ -25,10 +25,10 @@ WAD files have to be for ?1.9? version or above.
 
 If you want to take WAD files from Steam's release of Doom 1993, the original doom wad file is over 10MB, so it probably won't fit in the router's memory. 
 
-**You need to configure your terminal's window size, font and font size to meet the "-scaling n" argument. Passing negative value as an scaling parameter will cause segfault**
+**You need to configure your terminal's window size, font and font size to meet the "-scaling n" argument. Passing a negative value as a scaling parameter will cause segmentation fault** You might want to see dev's recomendations on this.
 
-Fire key isn't working by default, since the "use" action is binded to space instead. 
+Fire key isn't working by default, since the "use" action is binded to space instead, and the shooting is control (I assume). 
 
-So you need to rebind it by creating and editing ".default.cfg" file in doom_ascii folder. Don't forget to add the permissions too.
+So you need to rebind it by creating and editing ".default.cfg" file in doom_ascii folder. Don't forget to add the permissions for new file too.
 
-The syntax is "key_fire %id_of_the_key_you_want_to_use_in_scancode_format%", separated by a single space. E.g., if you want to bind fire for "H" key:key_fire 35).
+The syntax for this file is "key_fire %decimal_id_of_the_key_you_want_to_use_in_scancode_format%", separated by a single space. E.g., if you want to bind fire for "H" key:key_fire 35). Scancodes can be found here https://www.millisecond.com/support/docs/current/html/language/scancodes.htm 
