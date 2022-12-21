@@ -6,23 +6,23 @@ Asus N11P A1 has MediaTek MT7620N CPU (32bit MIPS-EL 24kec), which resolves into
 Cross compiled with GlibC (--enable-kernel=2.6.36) and Mipsel-linux-gnu-gcc (-EL -march=24kec -static -Os -s -Wl,-Bstatic -static-libgcc) for target mipsel-unknown-linux-gnu, by using crosstools-ng
 
 ## Sources: 
-- TCPDUMP - https://github.com/the-tcpdump-group/tcpdump (It was requiring [libpcap](https://github.com/the-tcpdump-group/libpcap) )
+- TCPDUMP - https://github.com/the-tcpdump-group/tcpdump (It required [libpcap](https://github.com/the-tcpdump-group/libpcap) )
 - NetCat 0.7.1 - https://netcat.sourceforge.net/download.php 
 - File 5.32 from lib magic - https://packages.ubuntu.com/bionic/file **!You need to specify magic.mgc database file with -m option. E.g. ./filemagic -m magic.mgc /etc/icon.ico !**
 - VIM 9.0 Tiny - https://github.com/vim/vim (With [ncurses](https://github.com/mirror/ncurses) ) . **Binaries are in vimtiny folder**
 - DOOM ASCII :feelsgood: - https://github.com/wojciech-graj/doom-ascii (Requires a wad file to play. You want to play with window size, and the "-scaling n" argument) 
-- CURL 7.58.0 (**http only** for now) - https://salsa.debian.org/debian/curl.git (Compiled with -static-libgcc --start-group -lc -lnss_dns -lresolv -Wl,--end-group; glibc was recompiled with --enable-static-nss for this one)
-
+- CURL 7.58.0 (**http only** for now) - https://salsa.debian.org/debian/curl.git (Compiled with -static-libgcc -Wl,--start-group -lc -lnss_dns -lresolv -Wl,--end-group; glibc was recompiled with --enable-static-nss for this one)
+- iperf 3.12-19 from esnet - https://github.com/esnet/iperf 
 
 ## How to use Binaries
-To use a binary, simply transfer it to router memory. Change the binary permissions to 777, and execute by ./%file_name_here% .
-I usually do it by using wget from telnet session. Keep in mind, that the read-write areas of router are usually tmpfs, and they will be erased after reloading the router.
+To use a binary, simply transfer it to router memory. Change the binary permissions to 777, and execute by ./%file_name_here%.
+I usually transfer them by using wget in the telnet session. Keep in mind, that the read-write areas of routers are usually tmpfs, and they will be erased after each reloading of the router.
 
 
 ## How to Play DOOM :feelsgood:
 Put the binary and the wad file in the same folder, add read-write-execute perrmissions for them, execute the doom_ascii.
 
-WAD files have to be for ?1.9? version or above.
+WAD files have to be for ?1.9? version or above (1.666 WAD files won't work).
 
 If you want to take WAD files from Steam's release of Doom 1993, the original doom wad file is over 10MB, so it probably won't fit in the router's memory. 
 
